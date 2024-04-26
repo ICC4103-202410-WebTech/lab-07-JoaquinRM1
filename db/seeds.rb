@@ -1,5 +1,8 @@
 require 'faker'
 
+# Crear una instancia de Faker con localización en español (España) para los posts
+Faker::Config.locale = 'es'
+
 # Crear 5 usuarios
 5.times do
   user = User.create!(
